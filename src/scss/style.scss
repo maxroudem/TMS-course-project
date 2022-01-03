@@ -10,6 +10,13 @@ h1,h2,ul,li,span,input,button{
     font-family: 'Roboto' sans-serif;
     font-weight: 400;
 }
+h1{
+    font-size: 30px;
+    @media only screen and (max-width:320px) {
+        font-size: 24px;
+    
+}
+}
 .main-title{
     width: 100%;
     height: 100vh;
@@ -18,19 +25,34 @@ h1,h2,ul,li,span,input,button{
 
     @media only screen and (max-width:1024px) {
         background-size: 100% 100%;
-        
-
+    
 }
-
 
     .header{
         padding: 38px 50px 0 50px;
         display: flex;
         align-items: center;
-        cursor: pointer;;
+        cursor: pointer;
+
+        @media only screen and (max-width:320px) {
+            padding: 15px 25px 0 25px;
+        }
+
+        .logo{
+            @media only screen and (max-width:320px) {
+                width: 20%;
+            }
+        }
 
         .navigation{
+        
             display: flex;
+
+            @media only screen and (max-width:320px) {
+                display: none;
+                
+            }
+
             ul{
                 display: flex;
                 gap: 25px;
@@ -44,6 +66,7 @@ h1,h2,ul,li,span,input,button{
             }
             .navigation-right{
                 margin-left: 150%;
+
                 @media only screen and (max-width:1024px) {
                     margin-left: 70%;
                     
@@ -51,7 +74,34 @@ h1,h2,ul,li,span,input,button{
             }
         }
     }
+
+    .line-nav-wrapper{
+        display: none;
+
+        .line-top{
+            border: 1px solid #FFFEF2;
+            width: 15px;
+        }
+        .line-center{
+            border: 1px solid #FFFEF2;
+            width: 10px;
+        }
+        .line-bottom{
+            border: 1px solid #FFFEF2;
+            width: 5px;
+        }
+    
+        @media only screen and (max-width:320px) {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            
+        }
+    }
+
 }
+
+
 .title-wrapper{
     margin-top: 15%;
     margin-left: 15%;
@@ -61,12 +111,23 @@ h1,h2,ul,li,span,input,button{
         color: #FFFEF2;
         width: 400px;
         margin-bottom: 20px;
+
+        @media only screen and (max-width:320px) {
+            font-size: 24px;
+            width: 200px;
+        
+    }
     }
     .main-text{
         font-size: 16px;
         color: #FFFEF2;
         width: 380px;
         display: inline-block;
+
+        @media only screen and (max-width:320px) {
+            font-size: 10px;
+            width: 200px;
+    }
     }
 }
 .section-2{
@@ -80,6 +141,10 @@ h1,h2,ul,li,span,input,button{
 
     .bottles{
         width: 720px;
+
+        @media only screen and (max-width:320px) {
+            display: none;
+    }
     }
 
     .sculpt-wrapper{
@@ -92,6 +157,11 @@ h1,h2,ul,li,span,input,button{
             position: absolute; 
             height: 100vh;
         }
+        .tube-1{
+            @media only screen and (max-width:320px) {
+                display: none;
+            }
+        }
     
     }
     .sculpt-main-wrapper{
@@ -100,16 +170,31 @@ h1,h2,ul,li,span,input,button{
             font-size: 28px;
             color: #333333;
             margin-bottom: 20px;
+
+            @media only screen and (max-width:320px) {
+                font-size: 24px;
+                width: 200px;
+        }
         }
         .subtitle{
             display: inline-block;
             color: #333333;
             font-size: 16px;
             margin-bottom: 26px;
+
+            @media only screen and (max-width:320px) {
+                font-size: 14px;
+                width: 200px;
+        }
         }
         .subtitle-text{
             font-size: 14px;
             padding-right: 10%;
+
+            @media only screen and (max-width:320px) {
+                font-size: 12px;
+                width: 200px;
+        }
         }
 
     }
@@ -121,6 +206,12 @@ h1,h2,ul,li,span,input,button{
     margin-bottom: 20px;
     background:#333333;
     color: #FFFEF2;
+
+    @media only screen and (max-width:320px) {
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+}
 }
 .button-transparent{
     background: transparent;
@@ -132,6 +223,10 @@ h1,h2,ul,li,span,input,button{
 .arrow{
     position: absolute;
     right: 20px;
+
+    @media only screen and (max-width:320px) {
+    display: none;
+}
 }
 
 .main-tube {
@@ -141,11 +236,32 @@ h1,h2,ul,li,span,input,button{
 
     @media only screen and (max-width:1024px) {
         overflow: scroll;
-}}
+}
+
+}
 .tube-wrapper {
     display: inline-flex;
     align-items: center;
     padding: 100px 0 40px 80px;
+    @media only screen and (max-width:320px) {
+    padding: 50px 0 20px 20px;
+}
+
+    @media only screen and (max-width:320px) {
+        flex-direction: column;
+        gap: 50px;
+}
+.tube-conteiner{
+    @media only screen and (max-width:320px) {
+        width: 60%;
+        margin: 50px;
+}
+}
+.tube-moiety{
+    @media only screen and (max-width:320px) {
+        display: none;
+}
+}
 }
 
 .text-tube {
@@ -157,6 +273,7 @@ h1,h2,ul,li,span,input,button{
 .scroll-wrapper{
     display: flex;
     padding-left: 80px;
+
     .main-scroll-link{
         border: 1px solid rgba(0, 0, 0, 0.6);
         height: 2px;
@@ -171,6 +288,9 @@ h1,h2,ul,li,span,input,button{
 
     @media only screen and (max-width:1024px) {
         overflow-y: scroll;
+}
+    @media only screen and (max-width:320px) {
+    display: none;
 }
 }
 
@@ -188,13 +308,27 @@ h1,h2,ul,li,span,input,button{
         @media only screen and (max-width:1024px) {
             margin-right: 6%;
     }
+    @media only screen and (max-width:320px) {
+        padding-left: 40px;
+
+}
         h1{
             width: 310px;
             font-size: 30px;
             margin-bottom: 27px;
+
+            @media only screen and (max-width:320px) {
+                font-size: 24px;
+                width: 250px;
+                text-align: center;
+        }
         }
         .main-button{
             width: 300px;
+
+            @media only screen and (max-width:320px) {
+                width: 200px;
+        }
         }
         .arrow-up{
             padding-left: 226px;
@@ -203,20 +337,38 @@ h1,h2,ul,li,span,input,button{
             width: 370px;
             margin-bottom: 27px;
             font-size: 16px;
+
+            @media only screen and (max-width:320px) {
+                font-size: 14px;
+                width: 250px;
+                text-align: center;
+        }
         }
         .text-vitamin{
             font-size: 14px;
+
+            @media only screen and (max-width:320px) {
+                font-size: 12px;
+                width: 300px;
+        }
         }
     }
     .vitamin-img{
         @media only screen and (max-width:1024px) {
             width: 50%;
 
+            @media only screen and (max-width:320px) {
+                display: none;
+        }
+
     }
     }
 }
 .arrow-up{
     padding-left: 300px;
+    @media only screen and (max-width:320px) {
+        display: none;
+}
 }
 .quote{
     width: 100%;
@@ -232,7 +384,12 @@ h1,h2,ul,li,span,input,button{
         text-align: center;
         margin-top: 200px;
         margin-bottom: 20px;
+        @media only screen and (max-width:320px) {
+            font-size: 24px;
+            width: 300px;
     }
+    }
+
     p{
         font-size: 14px;
         display: inline-block;
@@ -245,6 +402,10 @@ h1,h2,ul,li,span,input,button{
     color: #FFFEF2;
     display: flex;
     flex-wrap: wrap;
+
+    @media only screen and (max-width:320px) {
+        overflow: scroll;
+}
 
     .footer-main-wrapper{
         padding-top: 50px;
@@ -265,6 +426,9 @@ h1,h2,ul,li,span,input,button{
                 width: 387px;
     
         }
+        @media only screen and (max-width:320px) {
+            width: 290px;
+    }
         }
         .arrow-white-right{
             position: absolute;
@@ -304,6 +468,7 @@ h1,h2,ul,li,span,input,button{
         }
         }
     }
+    
 }
 .line-footer{
     border: 1px solid #FFFEF2;
@@ -317,6 +482,9 @@ h1,h2,ul,li,span,input,button{
     width: 520px;
     @media only screen and (max-width:1024px) {
         width: 300px;
+}
+@media only screen and (max-width:320px) {
+    width: 200px;
 }
 
 }
